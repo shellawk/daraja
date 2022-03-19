@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
   # define the variales
   # provide the following details, this part is found on your test credentials on the developer account
   $BusinessShortCode = '174379';//'174379';
-  $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';//'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';  
+  $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';//'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'; 
   
   /*
     This are your info, for
@@ -40,6 +40,7 @@ if(isset($_POST['submit'])){
     # M-PESA endpoint urls
   $access_token_url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
+// $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate';
 
   # callback url
   $CallBackURL = 'https://shellawk-test.herokuapp.com/callback_url.php';//'https://morning-basin-87523.herokuapp.com/callback_url.php';
