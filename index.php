@@ -1,6 +1,3 @@
-<?php echo 'hiiiiiiiiiiiiiii';?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
