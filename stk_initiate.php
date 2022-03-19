@@ -1,6 +1,5 @@
 <?php
 if(isset($_POST['submit'])){
-  print_r($_POST);
 
 
   date_default_timezone_set('Africa/Nairobi');
