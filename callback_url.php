@@ -1,4 +1,5 @@
 <?php
+    require_once './connect.php';
  		header("Content-Type: application/json");
 
      $response = '{
@@ -10,12 +11,15 @@
      $mpesaResponse = file_get_contents('php://input');
  
      // log the response
-     $logFile = "M_PESAConfirmationResponse.txt";
+    //  $logFile = "M_PESAConfirmationResponse.txt";
  
-     // write to file
-     $log = fopen($logFile, "a");
+    //  // write to file
+    //  $log = fopen($logFile, "a");
  
-     fwrite($log, $mpesaResponse);
-     fclose($log);
+    //  fwrite($log, $mpesaResponse);
+    //  fclose($log);
  
-     echo $response;
+    //  echo $response;
+
+    echo $mpesaResponse;
+?>
